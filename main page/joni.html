@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<header class="header";>
+  About Junaid until 2019
+</header>
+<title> Junaid </title>
+<body>
+  <a href="file:///Users/junaidsajid/Desktop/SajidWebpage/main%20page/index.html">
+  <button> Go To Home Page </button >
+  </a>
+
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="./joni/joni.jpg" style="width:100%">
+  <div class="text">Introduction </div>
+  <div class="bg-text">
+    <h1>Introduction</h1>
+    <p>My Name is Muhammad Junaid Sajid. and my Nickname is JHONI and Jay.
+      I am from Pakistan,I was born and brought up in Multan,The City Of Saints.
+      </p>
+    <h2> Study </h2>
+    <p> I completed my early education in Multan from L.G.O.S and after completed 8 grade, I moved to islamabad for Matriculation.
+         after 3 years, I returned to Multan to complete my High School with Mathematics, Chemstry and Physics from Nishat College Of Science.</p>
+         <h3>Hobby</h3>
+         <p>My hobby is to play and watch Cricket.I love Cricket and I used to play cricket since i was 7 or 8 years old.
+            Secondly, I like Photography,espeially taking selfies of me in every move. and the reason because of that is I am very addicted with Social Media
+            from last 6 or 7 years. </p>
+            <h4> College Life</h4>
+            <p>I had really really amazing college life. the very obvious reason is my friends. they were really amazing and I completely enjoyed my college life.
+                hence, in next pictures you will see My College Life pictures with my friends during 2016 to 2018</p>
+              </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="./joni/college1.jpg" style="width:100%">
+              <div class="text">My College </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="./joni/college2.jpg" style="width:100%">
+              <div class="text">My College </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="./joni/college3.jpg" style="width:100%">
+              <div class="text">My College </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="./joni/college4.jpg" style="width:100%">
+              <div class="text">During College </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">6/ 6</div>
+              <img src="./joni/college5.jpg" style="width:100%">
+              <div class="text">Last Day Of College </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            <a href="file:///Users/junaidsajid/Desktop/SajidWebpage/main%20page/index.html" class="previous">&laquo; Previous</a>
+            <a href="file:///Users/junaidsajid/Desktop/SajidWebpage/main%20page/history.html" class="next">Next &raquo;</a>
+            <br>
+          </br>
+
+          <div class= footer>
+            THIS IS THE END OF THIS PAGE
+          </div>
+</body>
+</html>
